@@ -1,5 +1,5 @@
 /*Question 1*/
-SELECT customer_id,company_name,contact_title, address, city, region, postal_code, country, phone, fax, contact_name FROM public.customers WHERE country='Germany'
+SELECT * FROM public.customers WHERE country='Germany'
 /*Question 2*/
 UPDATE public.customers set country='United Kingdom' WHERE country='UK'
 /*Question 3*/
@@ -12,15 +12,15 @@ INSERT INTO  customers(customer_id,company_name,contact_title, address, city, re
 ('STRV','Strive','student','Louise-Otto','Freiburg', 'Baden','79100','Germany','+251925356384','+251925356384','Ari Razab'),
 ('STRIV','Strive','student','Louise-Otto','Freiburg', 'Baden','79100','Germany','+251925356384','+251925356384','Simona Cossai')
 /*Question 5*/
-SELECT customer_id,company_name,contact_title, address, city, region, postal_code, country, phone, fax, contact_name FROM public.customers WHERE contact_title='Sales Representative'
+SELECT * FROM public.customers WHERE contact_title='Sales Representative'
 /*Question 6*/
 UPDATE public.customers set company_name='Linkedin' WHERE customer_id='BOTTM'
 /*Question 7*/
-SELECT customer_id,company_name,contact_title, address, city, region, postal_code, country, phone, fax, contact_name FROM public.customers WHERE region IS NULL or country='USA' 
+SELECT * FROM public.customers WHERE region IS NULL or country='USA' 
 /*Question 8*/
 DELETE FROM customers WHERE postal_code= '1734'
 /*Question 9*/
-SELECT customer_id,company_name,contact_title, address, city, region, postal_code, country, phone, fax, contact_name FROM public.customers WHERE contact_title='Owner'
+SELECT * FROM public.customers WHERE contact_title='Owner'
 /*Question 10*/
 SELECT company_name,contact_title, contact_name FROM public.customers WHERE country='Brazil'
 /*Question 11*/
